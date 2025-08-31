@@ -220,20 +220,29 @@ header h1 {
 
 /* Collapsible Sources */
 .sources-collapsible {
-    margin-top: 0.5rem;
-    font-size: 0.75rem;
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
     color: var(--text-secondary);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 0.25rem;
 }
 
 .sources-collapsible summary {
     cursor: pointer;
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem 0.75rem;
     user-select: none;
-    font-weight: 500;
+    font-weight: 600;
+    background-color: rgba(37, 99, 235, 0.05);
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgba(37, 99, 235, 0.1);
 }
 
 .sources-collapsible summary:hover {
     color: var(--text-primary);
+    background-color: rgba(37, 99, 235, 0.1);
 }
 
 .sources-collapsible[open] summary {
@@ -241,8 +250,32 @@ header h1 {
 }
 
 .sources-content {
-    padding: 0 0.5rem 0.25rem 1.5rem;
+    padding: 0.5rem;
     color: var(--text-secondary);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.sources-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    background-color: rgba(37, 99, 235, 0.15);
+    margin: 0.25rem;
+    transition: all 0.2s ease;
+    display: inline-block;
+    font-weight: 500;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.sources-content a:hover {
+    background-color: rgba(37, 99, 235, 0.25);
+    color: var(--text-primary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
 }
 
 /* Markdown formatting styles */
